@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pierwsza strona</title>
+    <link rel="stylesheet" href="stylesM.css">
+</head>
+<body>
+    <header>
+        <h1>Honoriusz</h1>
+        <nav class = "navbar">
+
+            <!-- Ukryty checkbox sterujący -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <!-- Ikona hamburgera -->
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <ul class = "nav-links">
+                <li><a href="home.html">Miasta</a></li>
+                <li><a href="index.html" class= 'active'>O mnie</a></li>
+                <li><a href="g.html">Gridowe</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Witamy</h2>
+            <p>To jest podstawowy szablon HTML. Edytuj zawartość w /c:/Users/honor/Documents/mojastronka/stronki/pierwsza/index.html</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Twoja strona</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
