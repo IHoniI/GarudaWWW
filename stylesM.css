@@ -42,11 +42,14 @@ footer {
 
 .banner-box{
   position: relative;
-  display: inline-block;
+  display: block;
+  max-width: 1920px;
+  margin: 0 auto;  
 }
 
 .banner-box img{
   width: 100%;
+  height: auto;
 }
 
 .banner-text{
@@ -162,9 +165,9 @@ header h1{
 }
 
 header img{
-    width: 50px;      /* szerokość logo */
-    height: auto;     /* proporcjonalna wysokość */
-    border-radius: 8px; /* opcjonalnie – zaokrąglone rogi */
+    width: 50px;     
+    height: 50px;     
+    border-radius: 8px; 
 }
 
 .logo {
@@ -186,7 +189,7 @@ header img{
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
  .menu-icon {
     display: block;
   }
@@ -214,5 +217,15 @@ header img{
     width: 85%;
   }
 
+  .logo img{
+    display: none;
+  }
+
 }
 
+@media (min-width: 1920px){
+  .card{
+    width: 50%;
+  }
+
+}
