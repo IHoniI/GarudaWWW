@@ -214,6 +214,42 @@ header img{
   cursor: pointer;
 }
 
+/*OST.html grid layout*/
+
+.grid-container{
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  grid-auto-columns: 200px;
+  grid-template-areas: "m m m"
+  "facts ftitle ftitle"
+  "facts text1 text2"
+  "hed q header2"
+  "a q tre3";
+
+  grid-template-columns: 1fr 2fr 2fr;
+  width: 100%;
+  gap: 1rem;
+}
+.row1 {
+  grid-template-areas: "nav minfo minfo";
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 0; /* brak przerw */
+}
+
+.grid-container .box{
+  background-color: aqua;
+}
+
+.grid-container .menu{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #222;
+  gap: 40px;
+  align-items: center;
+  padding-top: 20px;
+}
 
 @media (max-width: 700px) {
  .menu-icon {
