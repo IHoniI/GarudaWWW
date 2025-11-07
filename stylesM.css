@@ -51,6 +51,7 @@ footer {
 .banner-box img{
   width: 100%;
   display: block;
+  height: auto;
 }
 
 .banner-text{
@@ -61,7 +62,7 @@ footer {
   color: white;
   font-size: 3rem;
   text-align: center;
-} 
+}
 
 
 .main {
@@ -189,6 +190,7 @@ header img{
 /*OST.html grid layout*/
 
 .grid-container{
+  max-width: 2300px;
   display: grid;
   grid-template-rows: auto 1fr 2fr;
   grid-auto-columns: 200px;
@@ -220,15 +222,16 @@ header img{
 }
 
 .grid-container .bluegrey-card{
-  background-color: var(--color-header-text);
+  background-color: rgb(216, 182, 118);
+
 }
 
 .grid-container .long-card{
-  background-color: rgb(154, 108, 23);
+  background-color: var(--color-header-text);
 }
 
 .grid-container .long-text{
-  background-color:rgb(102, 92, 148)
+  background-color:rgb(159, 132, 83);
 }
 
 .grid-container .menu{
