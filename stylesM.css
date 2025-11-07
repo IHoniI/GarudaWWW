@@ -190,13 +190,16 @@ header img{
 
 .grid-container{
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr 2fr;
   grid-auto-columns: 200px;
   grid-template-areas: "m m m"
-  "facts ftitle ftitle"
-  "facts text1 text2"
-  "hed q header2"
-  "a q tre3";
+  "ifacts ititle ititle"
+  "ifacts itext1 itext2"
+
+  "program program program" 
+
+  "htitle htitle hfacts"
+  "htext1 htext2 hfacts";
 
   grid-template-columns: 1fr 2fr 2fr;
   width: 100%;
@@ -212,6 +215,8 @@ header img{
 
 .grid-container .box{
   background-color: aqua;
+  padding: 1rem;
+  place-items: center;
 }
 
 .grid-container .menu{
