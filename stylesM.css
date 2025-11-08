@@ -62,8 +62,22 @@ footer {
   color: white;
   font-size: 3rem;
   text-align: center;
+  animation: text-appear 1.5s ease-in;
+  transform-origin: bottom right;
 }
 
+@keyframes text-appear {
+  from{
+    transform: translate(100%, 100%);
+  }
+  to{
+    transform:  translate(-50%, -50%);;
+  }
+
+  50%{
+    color: red;
+  }
+}
 
 .main {
     display: flex;
@@ -83,6 +97,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    animation: appear 0.5s linear;
 
 }
 
@@ -215,10 +230,25 @@ header img{
   gap: 0; /* brak przerw */
 }
 
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+  
+}
+
 .grid-container .item{
   padding: 1rem;
   place-items: center;
   border-radius: 10px;
+  animation: appear linear;
+  animation-timeline: view(); /*animacja gdy elemnet widoczny*/
+  animation-range: entry 0% cover 20%;
 }
 
 .grid-container .bluegrey-card{
@@ -256,8 +286,13 @@ header img{
 }
 
 #long-gif{
-  max-width: 300px;
-  display: block;
+  background-image: url("images/plane.gif");
+  background-size: cover;    /* wypełnia cały obszar, zachowując proporcje */
+  background-repeat: no-repeat;
+  background-position: center center; /* centruje */
+  
+  width: 95%;
+  height: 95%;
 }
 
 @media (max-width: 700px) {
