@@ -213,6 +213,8 @@ header img{
   "ifacts ititle ititle"
   "ifacts itext1 itext2"
 
+  "ptitle ptitle ptitle"
+
   "gif program program" 
 
   "htitle htitle hfacts"
@@ -261,7 +263,14 @@ header img{
 }
 
 .grid-container .long-text{
-  background-color:rgb(159, 132, 83);
+  background-color:rgb(168, 140, 88);
+  white-space: pre-line; /* zachowujemy entery*/
+  column-count: 2;      /* rozbicie tekstu na 2 kolumny*/
+  column-gap: 2rem;  
+}
+
+.grid-container .long-text h3{
+  color: white;
 }
 
 .grid-container .menu{
@@ -292,7 +301,7 @@ header img{
   background-position: center center; /* centruje */
   
   width: 95%;
-  height: 95%;
+  height: 97%;
 }
 
 @media (max-width: 700px) {
@@ -355,6 +364,7 @@ header img{
       "ifacts ifacts ifacts"
       "itext1 itext1 itext2"
 
+      "ptitle ptitle ptitle"
       "program program program" 
 
       "htitle htitle htitle"
@@ -364,6 +374,10 @@ header img{
 
   #long-gif{
     display: none;
+  }
+
+  .grid-container .long-text{
+    columns: 1;
   }
 
 }
