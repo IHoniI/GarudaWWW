@@ -198,7 +198,7 @@ header img{
   "ifacts ititle ititle"
   "ifacts itext1 itext2"
 
-  "program program program" 
+  "gif program program" 
 
   "htitle htitle hfacts"
   "htext1 htext2 hfacts";
@@ -255,6 +255,10 @@ header img{
   color: var(--color-akcent);
 }
 
+#long-gif{
+  max-width: 300px;
+  display: block;
+}
 
 @media (max-width: 700px) {
  .menu-icon {
@@ -321,6 +325,10 @@ header img{
       "htitle htitle htitle"
       "hfacts hfacts hfacts"
       "htext1 htext1 htext2";
+  }
+
+  #long-gif{
+    display: none;
   }
 
 }
