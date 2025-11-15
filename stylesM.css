@@ -98,7 +98,6 @@ footer {
     flex-direction: row;
     gap: 2rem;
     animation: appear 0.5s linear;
-
 }
 
 .card .photos {
@@ -154,7 +153,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     padding: 14px 16px;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
@@ -304,6 +303,28 @@ header img{
   height: 97%;
 }
 
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('images/background_contact.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.contact-page .card{
+  white-space: pre-line;
+  width: 40%;
+  background-color: rgba(245, 222, 179, 0.811);
+}
+
+
 @media (max-width: 700px) {
  .menu-icon {
     display: block;
@@ -369,7 +390,7 @@ header img{
 
       "htitle htitle htitle"
       "hfacts hfacts hfacts"
-      "htext1 htext1 htext2";
+      "htext2 htext2 htext1";
   }
 
   #long-gif{
