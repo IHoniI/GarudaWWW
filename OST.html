@@ -43,7 +43,16 @@
                 </div>
                 
                 <div class="banner-box" style="grid-area: minfo;">
-                    <img src="images/posterOST.jpg" alt="Zdjęcie Chińskich domów w Fenghuang">
+                    <img src="images/posterOST.jpg" 
+                        srcset="
+                        images/posterOST-480.jpg 480w,
+                        images/posterOST-768.jpg 768w,
+                        images/posterOST.jpg 1920w"
+                        
+                        sizes="100vw"
+                        width="1920"
+                        height="800"
+                        alt="Zdjęcie Chińskich domów w Fenghuang">
                     <div class="banner-text">Zapraszamy na OST</div>
                 </div>
             </div>
@@ -199,7 +208,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span>Designed by: Honoriusz Morawiec</p>
+        <p>&copy; <span id="year"></span> Designed by: Honoriusz Morawiec</p>
     </footer>
 
     <script>

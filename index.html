@@ -32,7 +32,19 @@
 
     <main>
         <div class="banner-box">
-            <img src="images/poster.jpg">
+            <!--Optymalizacja obrazu-->
+            <img
+                src="images/poster.jpg"
+                srcset="
+                images/poster-480.jpg 480w,
+                images/poster-768.jpg 768w,
+                images/poster.jpg 1920w"
+                
+                sizes="100vw" 
+                alt="Banner przedstawiający widok z góry Tianmen"
+                width="1920"
+                height="400"
+            >
             <div class="banner-text">GARUDA</div>
         </div>
         
@@ -73,7 +85,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span>Designed by: Honoriusz Morawiec</p>
+        <p>&copy; <span id="year"></span> Designed by: Honoriusz Morawiec</p>
     </footer>
 
     <script>
